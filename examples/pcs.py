@@ -20,32 +20,32 @@ def print_parsed_data(scraper_instance, label):
 def main():
     # Race class
     race = Race(f"{RACE_URL}/overview")
-    #print_parsed_data(race, "RACE")
+    print_parsed_data(race, "RACE")
 
     # Race climbs class
     race_climbs = RaceClimbs(f"{RACE_URL}/route/climbs")
-    #print_parsed_data(race_climbs, "RACE CLIMBS")
+    print_parsed_data(race_climbs, "RACE CLIMBS")
 
     # Race startlist class
     race_start = RaceStartlist(f"{RACE_URL}/startlist")
-    #print_parsed_data(race_start, "RACE STARTLIST")
+    print_parsed_data(race_start, "RACE STARTLIST")
 
     # Ranking class
     ranking = Ranking("rankings/me/individual")
-    #print("RANKING CLASS")
-    #print(ranking.individual_ranking()[0:5])  # Display first 5 entries
+    print("RANKING CLASS")
+    print(ranking.individual_ranking()[0:5])  # Display first 5 entries
 
     # Rider class
     rider = Rider("rider/tadej-pogacar")
-    #print_parsed_data(rider, "RIDER")
+    print_parsed_data(rider, "RIDER")
 
     # Rider results class
     rider_results = RiderResults("rider/tadej-pogacar/results")
-    #print_parsed_data(rider_results, "RIDER RESULTS")
+    print_parsed_data(rider_results, "RIDER RESULTS")
 
     # Stage class
     stage = Stage("race/tour-de-france/2022/stage-18")
-    #print_parsed_data(stage, "STAGE")
+    print_parsed_data(stage, "STAGE")
 
     # Team class
     team = Team("team/ef-education-easypost-2022")
